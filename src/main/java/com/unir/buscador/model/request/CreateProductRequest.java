@@ -1,4 +1,4 @@
-package com.unir.products.model.request;
+package com.unir.buscador.model.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

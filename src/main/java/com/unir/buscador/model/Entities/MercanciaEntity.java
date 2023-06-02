@@ -1,4 +1,6 @@
-package com.unir.products.model.pojo;
+package com.unir.buscador.model.Entities;
+
+import java.util.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,29 +16,34 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "products")
+@Table(name = "mercancias")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
-public class Product {
-	
-	@Id
+public class MercanciaEntity {
+    @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "pk")
 	private Long id;
-	
-	@Column(name = "name", unique = true)
-	private String name;
-	
-	@Column(name = "country")
-	private String country;
-	
-	@Column(name = "description")
-	private String description;
-	
-	@Column(name = "visible")
-	private Boolean visible;
 
+    @Column(name = "codigo", unique = true)
+	private String codigo;
+	
+	@Column(name = "nombre")
+	private String nombre;
+	
+	@Column(name = "cantidad")
+	private Integer cantidad;
+	
+	@Column(name = "precio")
+	private Float precio;
+	
+	@Column(name = "ubicacion")
+	private String ubicacion;
+
+    @Column(name = "vencimiento")
+	private Date vencimiento;
 }

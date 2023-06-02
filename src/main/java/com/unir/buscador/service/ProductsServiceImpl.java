@@ -1,4 +1,4 @@
-package com.unir.products.service;
+package com.unir.buscador.service;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.unir.products.data.ProductRepository;
-import com.unir.products.model.pojo.Product;
-import com.unir.products.model.request.CreateProductRequest;
+import com.unir.buscador.data.ProductRepository;
+import com.unir.buscador.model.pojo.Product;
+import com.unir.buscador.model.request.CreateProductRequest;
 
 @Service
 public class ProductsServiceImpl implements ProductsService {

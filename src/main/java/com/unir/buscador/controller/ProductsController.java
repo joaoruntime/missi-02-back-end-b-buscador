@@ -1,4 +1,4 @@
-package com.unir.products.controller;
+package com.unir.buscador.controller;
 
 import java.util.Collections;
 import java.util.List;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.unir.products.model.pojo.Product;
-import com.unir.products.model.request.CreateProductRequest;
-import com.unir.products.service.ProductsService;
+import com.unir.buscador.model.pojo.Product;
+import com.unir.buscador.model.request.CreateProductRequest;
+import com.unir.buscador.service.ProductsService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
