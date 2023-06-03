@@ -10,8 +10,10 @@ public interface MercanciasService {
     List<MercanciaEntity> getMercancias();
 	
 	MercanciaEntity getMercancia(String productId);
+
+	MercanciaEntity updateMercancia(String mercanciaId,EntradaMercanciaRequest request);
 	
-	// Boolean removeMercancia(String productId);
+	Boolean removeMercancia(String productId);
 	
 	MercanciaEntity entrarMercancia(EntradaMercanciaRequest request);
 }
