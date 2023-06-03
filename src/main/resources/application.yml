@@ -3,9 +3,10 @@ spring:
   application:
     name: ms-bodegas-buscador
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 123456789
+    # url: ${EUREKA_URL:jdbc:postgresql://localhost:5432/postgres}    
+    url: jdbc:postgresql://${PGHOST:localhost}:${PGPORT:5432}/${PGDATABASE:postgres}
+    username: ${PGUSER:postgres}
+    password: ${PGPASSWORD:123456789}
   jpa:
     properties:
       hibernate:
