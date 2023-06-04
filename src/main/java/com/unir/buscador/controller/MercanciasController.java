@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -69,14 +70,14 @@ public class MercanciasController {
 
 	}
 
-	@PatchMapping("/mercancia/{mercanciaId}")
+	@PutMapping("/mercancia/{mercanciaId}")
 	public ResponseEntity<MercanciaEntity> updateMercancia(@PathVariable String mercanciaId,
 			@RequestBody EntradaMercanciaRequest request) {
 
 		MercanciaEntity updateMercancia = service.updateMercancia(mercanciaId, request);
 
 		if (updateMercancia != null) {
-			return ResponseEntity.status(HttpStatus.CREATED).body(updateMercancia);
+			return ResponseEntity.status(HttpStatus.OK).body(updateMercancia);
 		} else {
 			return ResponseEntity.badRequest().build();
 		}

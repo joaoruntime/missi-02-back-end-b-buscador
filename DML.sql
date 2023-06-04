@@ -1,0 +1,15 @@
+INSERT INTO mercancias (pk, cantidad, codigo, nombre, precio, ubicacion, vencimiento) VALUES 
+(102, 60, 'AA00Z0E2', 'Martillo', 15.56, 'Bodega Medellin', '2016-09-13 18:30:52.123'),
+(103, 50, 'BB00Z03', 'Destornillador', 10.50, 'Bodega Medellin', '2017-05-16 10:20:52.123'),
+(104, 100, 'CC00Z04', 'Alicate', 20.00, 'Bodega Bogota', '2018-07-17 12:40:52.123'),
+(105, 80, 'DD00Z05', 'Sierra', 25.30, 'Bodega Bogota', '2019-01-18 14:25:52.123'),
+(106, 90, 'EE00Z06', 'Taladro', 75.00, 'Bodega Medellin', '2020-03-20 16:50:52.123'),
+(107, 70, 'FF00Z07', 'Tuerca', 0.05, 'Bodega Cali', '2021-06-21 19:10:52.123'),
+(108, 200, 'GG00Z08', 'Tornillo', 0.08, 'Bodega Cali', '2022-08-22 08:30:52.123'),
+(109, 120, 'HH00Z09', 'Broca', 3.50, 'Bodega Bogota', '2023-10-23 10:40:52.123'),
+(110, 110, 'II00Z10', 'Llave Inglesa', 15.60, 'Bodega Medellin', '2024-11-24 12:20:52.123'),
+(111, 60, 'JJ00Z11', 'Cinta Metrica', 5.00, 'Bodega Cali', '2025-01-25 14:30:52.123'),
+(112, 85, 'KK00Z12', 'Escuadra', 8.50, 'Bodega Bogota', '2026-02-26 16:30:52.123'),
+(113, 65, 'LL00Z13', 'Lijadora', 100.00, 'Bodega Medellin', '2027-04-27 18:40:52.123'),
+(114, 75, 'MM00Z14', 'Cutter', 4.00, 'Bodega Cali', '2028-06-28 20:50:52.123'),
+(115, 50, 'NN00Z15', 'Mazo', 20.00, 'Bodega Bogota', '2029-08-29 22:00:52.123')
